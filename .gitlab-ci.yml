@@ -5,8 +5,6 @@ stages:
 test:
   stage: test
   image: mcr.microsoft.com/dotnet/core/sdk:3.1
-  only:
-    - master
   script:
     - cd xRateTest
     - dotnet test --test-adapter-path:. --logger:"junit;LogFilePath=../../MyProject.xml"
@@ -19,8 +17,6 @@ test:
 build:
   stage: build
   image: mcr.microsoft.com/dotnet/core/sdk:3.1
-  only:
-    - master
   script:
     - cd xRate
     - dotnet restore --interactive
