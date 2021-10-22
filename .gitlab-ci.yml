@@ -4,10 +4,10 @@ stages:
 
 test:
   stage: test
-  image: mcr.microsoft.com/dotnet/core/sdk:3.1
+  image: mcr.microsoft.com/dotnet/core/sdk:5.0
   script:
     - cd xRateTest
-    - dotnet test --test-adapter-path:. --logger:"junit;LogFilePath=../../MyProject.xml"
+    - dotnet test --test-adapter-path:. --logger:"junit;LogFilePath=../../xRateTest.xml"
   artifacts:
     paths:
       - ./MyProject.xml
@@ -16,7 +16,7 @@ test:
 
 build:
   stage: build
-  image: mcr.microsoft.com/dotnet/core/sdk:3.1
+  image: mcr.microsoft.com/dotnet/core/sdk:5.0
   script:
     - cd xRate
     - dotnet restore --interactive
