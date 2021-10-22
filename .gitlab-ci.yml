@@ -10,9 +10,9 @@ test:
     - dotnet test --test-adapter-path:. -v d #--logger:"junit;LogFilePath=../../xRateTest.xml"
   artifacts:
     paths:
-      - ./MyProject.xml
+      - ./xRateTest.xml
     reports:
-      junit: ./MyProject.xml
+      junit: ./xRateTest.xml
 
 build:
   stage: build
