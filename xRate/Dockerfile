@@ -9,6 +9,8 @@ COPY . /src
 RUN cd /src
 RUN dotnet restore --interactive
 RUN dotnet build --configuration Release
+
+FROM build AS publish
 RUN dotnet publish --configuration Release --output /app/publish
 
 FROM base AS final
