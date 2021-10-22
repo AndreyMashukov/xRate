@@ -7,7 +7,7 @@ test:
   image: mcr.microsoft.com/dotnet/sdk:5.0
   script:
     - cd xRateTest
-    - dotnet test --test-adapter-path:. #--logger:"junit;LogFilePath=../../xRateTest.xml"
+    - dotnet test --test-adapter-path:. -v d #--logger:"junit;LogFilePath=../../xRateTest.xml"
   artifacts:
     paths:
       - ./MyProject.xml
