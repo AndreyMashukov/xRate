@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mtRLFfm1g2HBUim/BkND69LwZu7W/azAQCnhvXKoLfMlJoUBXjOcjKsImT8v7lCsLNOvT3He993jCOJ1Q4ohRQ==",
+  "dgSpecHash": "rU8fq7voZ1c5U8v9wQvQevUhnw2qnBCWKY0l0fRcDhpXZOP6ZN2D8feFGQXU0jaHTlFVtqRGA/iEJkAbfbsS/w==",
   "success": true,
   "projectFilePath": "/Users/amashukov/RiderProjects/xRate/xRate/xRate.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "/Users/amashukov/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
-    "/Users/amashukov/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.18/microsoft.netcore.app.host.osx-x64.3.1.18.nupkg.sha512"
+    "/Users/amashukov/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.9/microsoft.netcore.app.host.osx-x64.5.0.9.nupkg.sha512"
   ],
   "logs": []
 }
