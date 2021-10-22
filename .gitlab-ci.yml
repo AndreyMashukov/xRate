@@ -35,5 +35,6 @@ test:
 build:
   <<: *build_image
   script: 
-    - docker build -f Dockerfile.prod --no-cache -t registry.gitlab.com/open-soft/xrate/back:${CI_COMMIT_REF_NAME} .
+    - cd xRate
+    - docker build -f Dockerfile --no-cache -t registry.gitlab.com/open-soft/xrate/back:${CI_COMMIT_REF_NAME} .
     - docker push registry.gitlab.com/open-soft/xrate/back:${CI_COMMIT_REF_NAME}
