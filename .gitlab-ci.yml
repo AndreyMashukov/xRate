@@ -14,17 +14,26 @@ test:
     reports:
       junit: ./xRateTest.xml
 
-build:
+.build_image: &build_image
   stage: build
-  image: mcr.microsoft.com/dotnet/sdk:5.0
-  script:
-    - cd xRate
-    - dotnet restore --interactive
-    - dotnet build --configuration Release
-    - dotnet publish --configuration Release --output ../publish/
-  artifacts:
-    paths:
-      - ./publish/*.*
-    expire_in: 1 week
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+    DOCKER_DRIVER: overlay2
+
+  only:
+    - main
+    - prerelease
   tags:
     - docker
+    - open-soft
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+build:
+  <<: *build_image
+  script: 
+    - docker build -f Dockerfile.prod --no-cache -t registry.gitlab.com/open-soft/xrate/back:${CI_COMMIT_REF_NAME} .
+    - docker push registry.gitlab.com/open-soft/xrate/back:${CI_COMMIT_REF_NAME}
