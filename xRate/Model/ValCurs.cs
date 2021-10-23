@@ -7,6 +7,6 @@ namespace xRate.Model
     public class ValCurs
     {
         [XmlElement("Valute")]
-        public List<Valute> list { get; set; }
+        public List<Valute> List { get; set; }
     }
 }

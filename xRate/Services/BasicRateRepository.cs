@@ -79,11 +79,11 @@ namespace xRate.Services
                 return new Rate[] { };
             }
 
-            return curs.list.Select((Valute valute) =>
+            return curs?.List.Select((item) =>
             {
-                var value = float.Parse(valute.Value.Replace(',', '.'));
+                var value = float.Parse(item.Value.Replace(',', '.'));
 
-                return new Rate($"{valute.CharCode}-RUB", value, date);
+                return new Rate($"{item.CharCode}-RUB", value, date);
             }).ToArray();
         }
     }
