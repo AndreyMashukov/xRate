@@ -15,34 +15,30 @@ namespace xRate.Services
         
         private readonly HttpClient _httpClient;
 
-        private DateTime LastRequest;
+        private DateTime _lastRequest;
 
-        private Rate[] Cached;
+        private Rate[] _cached;
         
         public BasicRateRepository(HttpClient httpClient)
         {
             this._httpClient = httpClient;
+            this._lastRequest = DateTime.Now.AddMinutes(-60);
+
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
         }
 
         public Rate[] GetList()
         {
             var date = DateTime.Now;
-            DateTime lastRequest = DateTime.Now.AddMinutes(-60);
 
-            if (this.LastRequest is DateTime)
+            if (date.Subtract(this._lastRequest).TotalMinutes < 5 && this._cached != null)
             {
-                lastRequest = this.LastRequest;
-            }
-
-            if (date.Subtract(lastRequest).TotalMinutes < 5 && this.Cached is Rate[])
-            {
-                return this.Cached;
+                return this._cached;
             }
 
             Rate[] result = this._doRequest();
-            this.LastRequest = date;
-            this.Cached = result;
+            this._lastRequest = date;
+            this._cached = result;
 
             return result;
         }
@@ -62,8 +58,7 @@ namespace xRate.Services
             }
             catch
             {
-                // todo: logger here...
-                return new Rate[] { };
+                return Array.Empty<Rate>();
             }
 
             ValCurs curs;
@@ -75,8 +70,7 @@ namespace xRate.Services
             }
             catch
             {
-                // todo: logger here...
-                return new Rate[] { };
+                return Array.Empty<Rate>();
             }
 
             return curs?.List.Select((item) =>
