@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using xRate.Services;
 
 namespace xRate.Controllers
@@ -8,7 +7,7 @@ namespace xRate.Controllers
     [Route("stock")]
     public class StockController : ControllerBase
     {
-        private IRateRepository _repository;
+        private readonly IRateRepository _repository;
         
         public StockController(IRateRepository rateRepository)
         {

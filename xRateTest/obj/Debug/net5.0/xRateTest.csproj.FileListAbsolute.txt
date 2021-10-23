@@ -113,3 +113,6 @@
 /Users/amashukov/RiderProjects/xRate/xRateTest/bin/Debug/net5.0/xRate
 /Users/amashukov/RiderProjects/xRate/xRateTest/bin/Debug/net5.0/Castle.Core.dll
 /Users/amashukov/RiderProjects/xRate/xRateTest/bin/Debug/net5.0/Moq.dll
+/Users/amashukov/RiderProjects/xRate/xRateTest/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
+/Users/amashukov/RiderProjects/xRate/xRateTest/bin/Debug/net5.0/System.Text.Encoding.CodePages.dll
+/Users/amashukov/RiderProjects/xRate/xRateTest/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll

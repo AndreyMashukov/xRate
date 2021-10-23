@@ -5,5 +5,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5b06d655_002D2346_002D4fa9_002D9f1d_002D1e9e6c612fd0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestShouldAllowToGetRateList" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::82390905-48AA-4130-BD57-6FBF3B205C78::net5.0::xRateTest.Controllers.StockControllerTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::82390905-48AA-4130-BD57-6FBF3B205C78::net5.0::xRateTest.Services.BasicRateRepositoryTest.TestShouldAllowToGetRates&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

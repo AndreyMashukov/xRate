@@ -28,6 +28,7 @@ namespace xRate
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddHttpClient();
 
             services.AddSingleton<IRateRepository, BasicRateRepository>();
         }

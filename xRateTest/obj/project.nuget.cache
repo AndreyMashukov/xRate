@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E/l9XWLAfF6GSlUQI07KC0ZacPc2Rx+wfxDJlSVHcwacj6JKRgRmRj+BCFDzrvm0ugUAI6QigwL0sitlIjk5qA==",
+  "dgSpecHash": "viYfdBPfHYMPTOYl3rIit037ooYE6M9ONyygiybJxV3o9heirNfwF1qoTmsj9D1U0bSUoGNqFf6PfuDH17hlaQ==",
   "success": true,
   "projectFilePath": "/Users/amashukov/RiderProjects/xRate/xRateTest/xRateTest.csproj",
   "expectedPackageFiles": [
@@ -58,12 +58,14 @@
     "/Users/amashukov/.nuget/packages/system.reflection.typeextensions/4.3.0/system.reflection.typeextensions.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/Users/amashukov/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0-rc.2.21480.5/system.runtime.compilerservices.unsafe.6.0.0-rc.2.21480.5.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.runtime.extensions/4.3.0/system.runtime.extensions.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.runtime.interopservices.runtimeinformation/4.3.0/system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.runtime.serialization.primitives/4.1.1/system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
+    "/Users/amashukov/.nuget/packages/system.text.encoding.codepages/6.0.0-rc.2.21480.5/system.text.encoding.codepages.6.0.0-rc.2.21480.5.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.text.regularexpressions/4.3.0/system.text.regularexpressions.4.3.0.nupkg.sha512",
     "/Users/amashukov/.nuget/packages/system.threading/4.3.0/system.threading.4.3.0.nupkg.sha512",
